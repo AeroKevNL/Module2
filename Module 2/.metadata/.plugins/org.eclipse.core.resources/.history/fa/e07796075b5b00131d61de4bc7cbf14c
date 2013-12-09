@@ -1,0 +1,11 @@
+package ss.week3.hotel;
+
+public class PricedSafe extends Safe implements Item {
+	private String pass;
+	private double price;
+	
+	public Safe(String pass, double price){
+		this.pass = pass;
+		this.price = price;
+	}
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="263" key="DIALOG_WIDTH"/>
+		<item value="146" key="DIALOG_Y_ORIGIN"/>
+		<item value="589" key="DIALOG_X_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="hotelPass" key="selection"/>
+		<list key="findhistory">
+			<item value="hotelPass"/>
+			<item value="room2"/>
+			<item value="room1"/>
+			<item value="GUEST_NAME_3"/>
+			<item value="Guest3"/>
+			<item value="GUEST_NAME_2"/>
+			<item value="GUEST_NAME_1"/>
+			<item value="PasswordTest"/>
+		</list>
+		<list key="replacehistory">
+			<item value="room13"/>
+			<item value="room12"/>
+			<item value="Guest3"/>
+			<item value="Guest2"/>
+			<item value="Guest1"/>
+		</list>
+	</section>
+</section>

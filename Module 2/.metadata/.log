@@ -1,0 +1,1977 @@
+!SESSION 2013-11-15 10:19:47.886 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-15 10:20:02.020
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-15 10:20:02.597
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 4 2 2013-11-15 11:25:39.890
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.handleApplyPressed(LaunchConfigurationTabGroupViewer.java:1386)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.handleLaunchConfigurationSelectionChanged(LaunchConfigurationsDialog.java:930)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog$3.selectionChanged(LaunchConfigurationsDialog.java:562)
+	at org.eclipse.jface.viewers.StructuredViewer$3.run(StructuredViewer.java:888)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.firePostSelectionChanged(StructuredViewer.java:886)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelection(StructuredViewer.java:1726)
+	at org.eclipse.jface.viewers.TreeViewer.setSelection(TreeViewer.java:1139)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationViewer.preservingSelection(LaunchConfigurationViewer.java:119)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1506)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:544)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1465)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationFilteredTree.textChanged(LaunchConfigurationFilteredTree.java:148)
+	at org.eclipse.ui.dialogs.FilteredTree$8.modifyText(FilteredTree.java:784)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:179)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4166)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1489)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1470)
+	at org.eclipse.swt.widgets.Text.setText(Text.java:2106)
+	at org.eclipse.ui.dialogs.FilteredTree.setFilterText(FilteredTree.java:1050)
+	at org.eclipse.ui.dialogs.FilteredTree$4.focusLost(FilteredTree.java:724)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:143)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4166)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1489)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1470)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:3320)
+	at org.eclipse.swt.widgets.Display.checkFocus(Display.java:653)
+	at org.eclipse.swt.widgets.Shell.makeFirstResponder(Shell.java:1271)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5666)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuperBoolean(Widget.java:292)
+	at org.eclipse.swt.widgets.Widget.makeFirstResponder(Widget.java:1174)
+	at org.eclipse.swt.widgets.Shell.makeFirstResponder(Shell.java:1270)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5666)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:221)
+	at org.eclipse.swt.widgets.Widget.mouseDownSuper(Widget.java:1101)
+	at org.eclipse.swt.widgets.Tree.mouseDownSuper(Tree.java:2047)
+	at org.eclipse.swt.widgets.Widget.mouseDown(Widget.java:1093)
+	at org.eclipse.swt.widgets.Control.mouseDown(Control.java:2563)
+	at org.eclipse.swt.widgets.Tree.mouseDown(Tree.java:2012)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5556)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:221)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2104)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2318)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5620)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5057)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5206)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:128)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.open(LaunchConfigurationsDialog.java:1134)
+	at org.eclipse.debug.ui.DebugUITools$2.run(DebugUITools.java:604)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.debug.ui.DebugUITools.openLaunchConfigurationDialogOnGroup(DebugUITools.java:612)
+	at org.eclipse.debug.ui.DebugUITools.openLaunchConfigurationDialogOnGroup(DebugUITools.java:546)
+	at org.eclipse.debug.ui.actions.OpenLaunchDialogAction.run(OpenLaunchDialogAction.java:81)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:499)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4166)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1489)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1474)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-11-15 12:12:25.922
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Core Exception [code 275] A resource exists with a different case: '/Threewaylamp/src/LampPackage'.
+	at org.eclipse.jdt.internal.core.JavaModelOperation.createFolder(JavaModelOperation.java:292)
+	at org.eclipse.jdt.internal.core.CreatePackageFragmentOperation.executeOperation(CreatePackageFragmentOperation.java:88)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:793)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.createPackageFragment(PackageFragmentRoot.java:297)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.CreatePackageChange.perform(CreatePackageChange.java:56)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.performChange(ChangeCorrectionProposal.java:185)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.apply(ChangeCorrectionProposal.java:113)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:945)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:891)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$27(CompletionProposalPopup.java:887)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$5.widgetDefaultSelected(CompletionProposalPopup.java:667)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:119)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4166)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1489)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1474)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/Threewaylamp/src/LampPackage'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:329)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:307)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:30)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:95)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.createFolder(JavaModelOperation.java:286)
+	at org.eclipse.jdt.internal.core.CreatePackageFragmentOperation.executeOperation(CreatePackageFragmentOperation.java:88)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:793)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.createPackageFragment(PackageFragmentRoot.java:297)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.CreatePackageChange.perform(CreatePackageChange.java:56)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.performChange(ChangeCorrectionProposal.java:185)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.apply(ChangeCorrectionProposal.java:113)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:945)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:891)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$27(CompletionProposalPopup.java:887)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$5.widgetDefaultSelected(CompletionProposalPopup.java:667)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:119)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4166)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1489)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1474)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2013-11-15 12:12:25.924
+!MESSAGE A resource exists with a different case: '/Threewaylamp/src/LampPackage'.
+
+!ENTRY org.eclipse.ui 4 4 2013-11-15 12:13:24.851
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-11-15 12:40:01.506
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: Threewaylamp
+!STACK 1
+Java Model Exception: Java Model Status [LampTest [in [Working copy] ThreeWayLamp.java [in LampPackage [in src [in Threewaylamp]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:498)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:532)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:244)
+	at org.eclipse.jdt.internal.core.Member.getNameRange(Member.java:324)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.createProblemFor(AbstractImageBuilder.java:399)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.acceptResult(AbstractImageBuilder.java:181)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:510)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:366)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.compile(IncrementalImageBuilder.java:329)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:303)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:134)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:265)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:193)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-11-15 12:40:01.507
+!MESSAGE LampTest [in [Working copy] ThreeWayLamp.java [in LampPackage [in src [in Threewaylamp]]]] does not exist
+!SESSION 2013-11-15 14:02:11.567 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-15 14:02:21.071
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-15 14:02:21.744
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-11-15 16:01:25.865 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-15 16:01:32.905
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-15 16:01:33.508
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-11-19 10:58:39.642 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-19 10:58:48.547
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-19 10:58:49.229
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-11-19 14:44:42.992 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-19 14:44:49.220
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-19 14:44:49.806
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-11-20 11:40:26.769 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-20 11:40:34.797
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-20 11:40:35.532
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-11-20 12:07:18.780
+!MESSAGE Unable to create part
+
+!ENTRY org.eclipse.jdt.ui 4 996 2013-11-20 12:07:18.783
+!MESSAGE The Class File Viewer cannot handle the given input ('org.eclipse.ui.ide.FileStoreEditorInput').
+!STACK 1
+org.eclipse.core.runtime.CoreException: The Class File Viewer cannot handle the given input ('org.eclipse.ui.ide.FileStoreEditorInput').
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor.doSetInput(ClassFileEditor.java:656)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3217)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:1818)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:1815)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3235)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3262)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:359)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:306)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:857)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:333)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:71)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:53)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:949)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1096)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:66)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4650)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:576)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:543)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:610)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:322)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1034)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3112)
+	at org.eclipse.ui.internal.WorkbenchPage.access$21(WorkbenchPage.java:3034)
+	at org.eclipse.ui.internal.WorkbenchPage$8.run(WorkbenchPage.java:3016)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3012)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2976)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2959)
+	at org.eclipse.ui.ide.IDE.openEditorOnFileStore(IDE.java:1132)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:107)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:76)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4166)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1489)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1474)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+!SUBENTRY 1 org.eclipse.jdt.ui 4 996 2013-11-20 12:07:18.785
+!MESSAGE The Class File Viewer cannot handle the given input ('org.eclipse.ui.ide.FileStoreEditorInput').
+
+!ENTRY org.eclipse.ui 4 4 2013-11-20 12:07:18.850
+!MESSAGE Unable to create part
+
+!ENTRY org.eclipse.jdt.ui 4 996 2013-11-20 12:07:18.851
+!MESSAGE The Class File Viewer cannot handle the given input ('org.eclipse.ui.ide.FileStoreEditorInput').
+!STACK 1
+org.eclipse.core.runtime.CoreException: The Class File Viewer cannot handle the given input ('org.eclipse.ui.ide.FileStoreEditorInput').
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor.doSetInput(ClassFileEditor.java:656)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3217)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:1818)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:1815)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3235)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3262)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:359)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:306)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:857)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:333)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:71)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:53)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:949)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1096)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:66)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4650)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:576)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:543)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:610)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1031)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3112)
+	at org.eclipse.ui.internal.WorkbenchPage.access$21(WorkbenchPage.java:3034)
+	at org.eclipse.ui.internal.WorkbenchPage$8.run(WorkbenchPage.java:3016)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3012)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2976)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2959)
+	at org.eclipse.ui.ide.IDE.openEditorOnFileStore(IDE.java:1132)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:107)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:76)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4166)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1489)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1474)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+!SUBENTRY 1 org.eclipse.jdt.ui 4 996 2013-11-20 12:07:18.851
+!MESSAGE The Class File Viewer cannot handle the given input ('org.eclipse.ui.ide.FileStoreEditorInput').
+!SESSION 2013-11-22 09:47:51.805 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-22 09:47:58.829
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-22 09:47:59.458
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:39:41.032
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:39:41.037
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:39:41.047
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:39:41.048
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:39:42.361
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:39:42.362
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:32.649
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:32.649
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:33.651
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:33.651
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:39.173
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:39.174
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:39.231
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:39.232
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:40.190
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:40.191
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:40.201
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:470)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:40.201
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:470)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:41.707
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:41.707
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:45.728
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:45.728
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:45.738
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:45.738
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:49.249
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:49.250
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:203)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:521)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1082)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:170)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:49.261
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:49.262
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:50.295
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:50.295
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:56.118
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:56.119
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:58.782
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:206)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:58.782
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:246)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:206)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:58.790
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:470)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:161)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:269)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:371)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:331)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:58.791
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:470)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:161)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:269)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:371)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:331)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:40:58.796
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:161)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:269)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:371)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:331)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:40:58.797
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.getOverrideIndicators(OverrideIndicatorLabelDecorator.java:161)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.computeAdornmentFlags(OverrideIndicatorLabelDecorator.java:136)
+	at org.eclipse.jdt.ui.OverrideIndicatorLabelDecorator.decorate(OverrideIndicatorLabelDecorator.java:273)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:269)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:371)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:331)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:41:16.970
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:41:16.971
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2013-11-22 10:41:17.163
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.AssistContext.getASTRoot(AssistContext.java:119)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:221)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:199)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3976)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3653)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2013-11-22 10:41:17.163
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:537)
+	at org.eclipse.jdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:480)
+	at org.eclipse.jdt.ui.SharedASTProvider.getAST(SharedASTProvider.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.AssistContext.getASTRoot(AssistContext.java:119)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:221)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:199)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3976)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3653)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+
+!ENTRY org.eclipse.ui 4 0 2013-11-22 10:41:17.170
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration)
+	at org.eclipse.swt.SWT.error(SWT.java:4397)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3976)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3653)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.ClassCastException: org.eclipse.jdt.core.dom.EnumDeclaration cannot be cast to org.eclipse.jdt.core.dom.TypeDeclaration
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2454)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:537)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:186)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2679)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1222)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:291)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1207)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:807)
+	at org.eclipse.jdt.internal.ui.text.correction.ASTResolving.createQuickFixAST(ASTResolving.java:1140)
+	at org.eclipse.jdt.internal.ui.text.correction.AssistContext.getASTRoot(AssistContext.java:122)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:221)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:199)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2013-11-22 11:30:40.629
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.mountainminds.eclemma.internal.ui.coverageview.CoverageView$4.paint(CoverageView.java:188)
+	at org.eclipse.jface.viewers.OwnerDrawLabelProvider$OwnerDrawListener.handleEvent(OwnerDrawLabelProvider.java:58)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4166)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1489)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1474)
+	at org.eclipse.swt.widgets.Tree.drawInteriorWithFrame_inView(Tree.java:1237)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5801)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.drawRect(Widget.java:742)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5534)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationNextEventMatchingMask(Display.java:4918)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5296)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.nextEventMatchingMask(NSApplication.java:94)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+
+!ENTRY org.eclipse.ui 4 4 2013-11-22 12:09:43.012
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+!SESSION 2013-11-22 12:19:30.215 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-22 12:20:02.080
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-22 12:20:02.914
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-11-22 12:20:42.086
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+!SESSION 2013-11-22 14:39:32.485 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-22 14:39:38.678
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-22 14:39:39.243
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-11-22 16:42:40.803 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-22 16:42:48.359
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-22 16:42:49.043
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-11-26 14:10:43.460 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-26 14:10:50.889
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-26 14:10:51.591
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-11-27 15:20:26.995 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-27 15:20:37.297
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-27 15:20:37.960
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-11-28 11:22:33.379 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-28 11:23:16.216
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+!SESSION 2013-11-29 09:51:43.934 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-11-29 09:52:05.621
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-29 09:52:06.267
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-12-02 14:48:51.757 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-12-02 14:48:58.935
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.ui 4 4 2013-12-02 14:15:16.554
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+!SESSION 2013-12-02 14:16:36.950 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-12-02 14:16:43.396
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-02 14:16:43.992
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-12-02 14:18:09.653
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.ui 4 4 2013-12-02 14:42:59.662
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC@1aa0b3df} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.ui 4 4 2013-12-02 15:08:32.617
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC@1aa0b3df} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+!SESSION 2013-12-03 11:18:46.051 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-12-03 11:18:53.681
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-03 11:18:54.260
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-12-03 11:03:15.361
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.ui 4 4 2013-12-03 11:04:16.706
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+!SESSION 2013-12-06 09:43:49.009 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-12-06 09:43:55.875
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-06 09:43:56.569
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-12-06 10:38:40.119
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+!SESSION 2013-12-06 13:53:33.227 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-12-06 13:53:40.736
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-06 13:53:41.365
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-12-09 10:14:43.923 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-12-09 10:15:22.531
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-09 10:15:23.193
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-12-09 10:16:19.588
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+!SESSION 2013-12-09 14:41:09.472 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nl_NL
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Jurgen/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2013-12-09 14:41:16.808
+!MESSAGE Conflicting handlers for org.jmlspecs.eclipse.commands.ChooseForRAC: {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC} vs {org.jmlspecs.openjml.eclipse.MenuActions$ChooseForRAC}
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-09 14:41:17.406
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

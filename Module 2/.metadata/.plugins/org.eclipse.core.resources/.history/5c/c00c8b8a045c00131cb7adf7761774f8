@@ -1,0 +1,17 @@
+package ss.week3.hotel;
+
+public class PricedSafe extends Safe implements Item {
+	private Safe s;
+	private double price;
+	
+	public PricedSafe(double price){
+	}
+	
+	public String toString(){
+		return "Price: " + price;
+	}
+	
+	public double getAmount(){
+		return 49.99;
+	}
+}

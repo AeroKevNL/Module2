@@ -1,0 +1,7 @@
+package ss.Hotel;
+
+public class GetAmount implements Item {
+	public double getAmount () {
+		return 2.33;
+	}
+}

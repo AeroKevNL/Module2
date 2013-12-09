@@ -1,0 +1,32 @@
+package ss.week4;
+
+import java.lang.reflect.Array;
+
+public class Opgave41 {
+	static int[] list = {1,-2,3,-4,5,-6,5,6,4,2,5,-10,-12};
+	
+	public static void main(String[] args){
+		System.out.println(numberOfNegatives(list));
+		System.out.println(reverseNumbers(list));
+	}
+	
+	public static int numberOfNegatives(int[] list){
+		int i;
+		int count = 0;
+		for(i=0; i<list.length; i++){
+			if(list[i] < 0){
+				count++;
+			}
+		}
+		return count;
+	}
+	
+	public static int[] reverseNumbers(int[] list){
+		for(int i=0; i<list.length/2; i++){
+			int temp = list[i];
+			Array.setInt(list, i, list[list.length-1-i]);
+			Array.setInt(list, list.length-1-i, temp);
+		}
+		return list;
+	}
+}

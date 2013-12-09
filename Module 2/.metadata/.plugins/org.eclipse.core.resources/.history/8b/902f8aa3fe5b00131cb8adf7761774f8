@@ -1,0 +1,18 @@
+package ss.week3.hotel;
+
+public class PricedSafe extends Safe implements Bill.Item {
+	private double price;
+	
+	public PricedSafe(String pass, double price){
+		super(pass);
+		this.price = price;
+	}
+	
+	public String toString(){
+		return "Price: " + price;
+	}
+	
+	public double getAmount(){
+		return 49.99;
+	}
+}

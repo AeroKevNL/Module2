@@ -1,0 +1,24 @@
+package ss.Hotel;
+
+public class Bill extends GetAmount {
+
+	java.io.PrintStream output = null;
+	private double sum = 0.00;
+	
+	Bill(java.io.PrintStream theOutStream) {
+		this.output = theOutStream;
+	}
+
+	public void close() {
+		System.out.println(getSum());
+	}
+
+	public double getSum() {
+		return sum;
+	}
+
+	public void newItem(Item item) {
+		sum = sum + getAmount();
+		System.out.println(item);
+	}
+}

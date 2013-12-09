@@ -1,0 +1,24 @@
+package ss.week4;
+
+public class IntSet {
+	private boolean[] IsIn;
+
+	public IntSet(int max){
+		for(int i=0; i<=max; i++){
+			IsIn[i] = true;
+		}
+	}
+	
+	public void addInt(int i){
+		if(!IsIn[i]) IsIn[i] = true;
+	}
+	
+	public void removeInt(int i){
+		if(IsIn[i]) IsIn[i] = false;
+	}
+	
+	public boolean testForInt(int i){
+		if(i>= 0) return IsIn[i];
+		else return false;
+	}
+}

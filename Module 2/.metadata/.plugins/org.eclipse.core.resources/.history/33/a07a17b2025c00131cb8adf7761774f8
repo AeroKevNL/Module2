@@ -1,0 +1,22 @@
+package ss.week3.hotel;
+
+public class PricedRoom extends Room {
+	private int roomNumber;
+	private double roomPrice;
+	private double safePrice;
+	
+	public PricedRoom(int num, double roomprice, Safe safe){
+		super(num,safe);
+		this.roomNumber = num;
+		this.roomPrice = roomprice;
+		this.safePrice = safeprice;
+	}
+	
+	public String toString(){
+		return "Room Number: " + roomNumber + "| Room Price: " + roomPrice + " | Safe Price: " + safePrice;
+	}
+	
+	public double getAmount(){
+		return 73.42;
+	}
+} 

@@ -1,0 +1,7 @@
+package ss.week3.hotel;
+
+public class BillTestTest {
+	public static void main(String[] arg){
+		BillTest.runTest();
+	}
+}

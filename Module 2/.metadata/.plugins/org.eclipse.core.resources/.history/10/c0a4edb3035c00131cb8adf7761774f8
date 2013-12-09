@@ -1,0 +1,43 @@
+package ss.Hotel;
+
+public class BillTest {
+	
+	private Bill b;
+	private Item Eten;
+	private Item Herman;
+	private Item Drinken;
+
+	public static void main(String[] args) {
+		BillTest t = new BillTest();
+		t.runTest();
+	}
+	
+	public void runTest(){
+		setUp();
+		System.out.println("-------");
+		addItem(Eten);
+		System.out.println("-------");
+		addItem(Herman);
+		System.out.println("-------");
+		addItem(Drinken);
+		System.out.println("-------");
+		close();
+	}
+	
+	public void setUp () {
+		b = new Bill(null);
+	}
+	
+	public void addItem(Item item) {
+		b.newItem(item);
+	}
+	
+	public void printSum() {
+		System.out.println(b.getSum());
+	}
+	
+	public void close () {
+		b.close();
+	}
+
+}

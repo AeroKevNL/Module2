@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=PasswordStuff/src&amp;lt;ss.week1.hotel{GuestTest.java[GuestTest&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=PasswordStuff/src&amp;lt;ss.week1{Hello.java[Hello&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=PasswordStuff/src&amp;lt;ss.week1{PasswordTestTest.java[PasswordTestTest&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Hotel/src&amp;lt;ss.week2.hotel{SafeTest.java[SafeTest&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Hotel/src&amp;lt;ss.week3.hotel{BillTest2.java[BillTest2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Hotel/src&amp;lt;ss.week4{Opgave41Test.java[Opgave41Test&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Hotel/src&amp;lt;ss.week4{Opgave41.java[Opgave41&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Hotel/src&amp;lt;ss.week2.hotel{SafeTestTest.java[SafeTestTest&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Hotel/src&amp;lt;ss.week3.hotel{Tester.java[Tester&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Hotel/src&amp;lt;ss.week3.hotel{HotelTest.java[HotelTest&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="79" key="DIALOG_Y_ORIGIN"/>
+			<item value="420" key="DIALOG_X_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+</section>

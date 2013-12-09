@@ -1,0 +1,11 @@
+package ss.week4;
+
+import ss.week4.Opgave41;
+
+public class Opgave41Test {
+	static int[] list = {1,-2,3,-4,5,-6};
+	public static void main(String[] args) {
+		System.out.println(numberOfNegatives(list));
+	}
+
+}

@@ -1,0 +1,53 @@
+package ss.Hotel;
+
+import ss.week3.hotel.Safe;
+
+public class SafeTest {
+
+	public Safe safe;
+	public Safe safe2;
+	public Safe safe4;
+	public Safe safe5;
+
+	public void runTest() {
+		setUp();
+		activateSafe();
+		openSafe();
+		closeSafe();
+		deactivateSafe();
+	}
+
+	public void setUp() {
+		safe = new Safe("NewPass");
+		safe2 = new Safe("NewP");
+		safe4 = new Safe("N ADSHGASD");
+		safe5 = new Safe("s");
+	}
+
+	public void activateSafe() {
+		safe.activate("NewPass");
+		safe2.activate("WrongPass");
+	}
+
+	public void openSafe() {
+		safe.open("WrongPass");
+		safe.open("NewPass");
+		safe2.open("NewPass2");
+	}
+
+	public void closeSafe() {
+		safe.close();
+		safe2.close();
+	}
+
+	public void deactivateSafe() {
+		safe.deactivate();
+		safe2.deactivate();
+	}
+
+	public static void main(String[] args) {
+		SafeTest safe3 = new SafeTest();
+		safe3.runTest();
+	}
+
+}

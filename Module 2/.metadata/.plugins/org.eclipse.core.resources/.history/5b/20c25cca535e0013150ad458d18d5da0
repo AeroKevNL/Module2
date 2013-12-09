@@ -1,0 +1,28 @@
+package ss.week3.hotel;
+
+public class BillTest2 {
+
+	public static void main(String[] args) {
+		Bill bill1 = new Bill(System.out);
+		//Bill bill2 = new Bill(null);
+
+		MakeItem item1 = new MakeItem("Pizza", 7);
+		MakeItem item2 = new MakeItem("Stenen", 20);
+		MakeItem item3 = new MakeItem("15", 5.4);
+		MakeItem item4 = new MakeItem("Mona", 24.13);
+
+		bill1.newItem(item1);
+		bill1.newItem(item2);
+		bill1.newItem(item3);
+		bill1.newItem(item4);
+		bill1.close();
+
+		/*bill2.newItem(item1);
+		bill2.newItem(item2);
+		bill2.newItem(item3);
+		bill2.newItem(item4);
+		bill2.close();*/
+
+	}
+
+}

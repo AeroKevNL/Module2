@@ -1,0 +1,28 @@
+package ss.week3.hotel;
+
+public class Bill extends Ite {
+	private java.io.PrintStream output;
+	private double sum = 0.00;
+	
+	public Bill(java.io.PrintStream theOutStream) {
+		this.output = theOutStream;
+		System.setOut(theOutStream);
+	}
+	
+	public void close(){
+		System.out.println("Sum:" + getSum());
+	}
+	
+	public double getSum(){
+		return sum;
+	}
+	
+	public void newItem(Item item){
+		if(this.output == null) return;
+		else {
+			sum = sum + item.getAmount();
+			System.out.println(item);
+		}
+	}
+}
+

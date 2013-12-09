@@ -1,0 +1,36 @@
+package ss.week3.hotel;
+
+public class BillTest2 {
+	private Bill b;
+
+	public static void main(String[] args) {
+		BillTest2 t = new BillTest2();
+		t.runTest();
+	}
+
+	public void runTest() {
+		setUp();
+		addItem("Eten");
+		addItem("Drinken");
+		printSum();
+		addItem("Toetje");
+		printSum();
+		close();
+	}
+
+	public void setUp() {
+		b = new Bill(null);
+	}
+
+	public void addItem(String item) {
+		b.newItem(createItem(item));
+	}
+
+	public void printSum() {
+		System.out.println(b.getSum());
+	}
+
+	public void close() {
+		b.close();
+	}
+}

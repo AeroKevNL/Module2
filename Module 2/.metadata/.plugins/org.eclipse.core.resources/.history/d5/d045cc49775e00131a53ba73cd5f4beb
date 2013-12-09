@@ -1,0 +1,20 @@
+package ss.week3.hotel;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Hotel h = new Hotel("Kut Hotel");
+		Guest guest = new Guest("Kut Hooft");
+		Guest guest2 = new Guest("Kut Ho1oft");
+		Guest guest3 = new Guest("Kut H3o1oft");
+		System.out.println(h.checkIn("Password123", guest));
+		System.out.println(room12.getGuest());
+		System.out.println(h.checkIn("Password123", guest));
+		System.out.println(h.checkIn("Password123", guest));
+		System.out.println(h.checkIn("Password123", guest2));
+		System.out.println(h.checkIn("Password123", guest3));
+		System.out.println(h.checkOut(guest));
+		System.out.println(guest.getRoom() + guest.getName());
+	}
+
+}

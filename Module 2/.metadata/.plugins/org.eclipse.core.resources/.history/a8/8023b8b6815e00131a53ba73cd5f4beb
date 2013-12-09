@@ -1,0 +1,12 @@
+package ss.week4;
+
+public class IntTest {
+
+	public static void main(String[] args) {
+		IntSet set = new IntSet(50);
+		set.addInt(60);
+		set.testForInt(25);
+		set.testForInt(60);
+	}
+
+}
